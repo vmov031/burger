@@ -5,6 +5,6 @@ CREATE TABLE burgers (
 id int AUTO_INCREMENT,
 burger_name VARCHAR(100),
 devoured BIT DEFAULT 1 NOT NULL,
-date TIMESTAMP NOT NULL DEFAULT(GETDATE()),
+date_created DATETIME NOT NULL,
 PRIMARY KEY(id)
 );
