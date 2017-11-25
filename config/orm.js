@@ -12,10 +12,12 @@ var orm = {
 
 	insertOne: function(whatToSelect, table, col) {
 		var queryString = "INSERT INTO ?"
+	},
+
+
+	updateOne: function() {
+
 	}
-
-
-	updateOne: function()
 };
 
 module.exports = orm;
