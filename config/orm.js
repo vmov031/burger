@@ -11,12 +11,20 @@ var orm = {
 	},
 
 	insertOne: function(whatToSelect, table, col) {
-		var queryString = "INSERT INTO ?"
+		var queryString = "INSERT INTO ? VALUES ?, ?";
+		connection.query(queryString, [whatToSelect],
+			function(err, result) {
+				console.log(result);
+			});
 	},
 
 
-	updateOne: function() {
-
+	updateOne: function(whatToSelect, col1, col2) {
+		var queryString = "UPDATE";
+		connection.query(queryString, [whatToSelect],
+			function(err, result) {
+				console.log(result);
+			});
 	}
 };
 
